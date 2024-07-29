@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="music-icon.png" alt="Music Icon" class="music-icon">
+            <h1>Welcome to Our Music Player</h1>
+            <p class="welcome-quote">"Let the music heal your soul."</p>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="song-list-container">
+            <ul id="song-list">
+                <li data-src="Cheri-Cheri-Lady.mp3" data-img="song0.jpg">Cheri Cheri Lady - Modern Talking</li>
+                <li data-src="Christina_Perri_-_A_Thousand_Years_CeeNaija.com_.mp3" data-img="song1.jpg">A Thousand Years</li>
+                <li data-src="You Armaan Malik 128 Kbps.mp3" data-img="song2.jpg">You - Armaan Malik</li>
+                <li data-src="Someone-You-Loved(PagalWorld).mp3" data-img="song3.jpg">Someone-You-Loved</li>
+                <li data-src="Middle of the Night-(PagalSongs.Com.IN).mp3" data-img="song4.jpg">Middle of the Night</li>
+                <li data-src="Stuck With U - Ariana Grande, Justin Bieber 320(PagalWorld).mp3" data-img="song5.jpg">Stuck With You</li>
+            </ul>
+        </div>
+        <div class="player-container">
+            <div class="image-container">
+                <img id="track-image" src="song0.jpg" alt="Track Image">
+            </div>
+            <div class="info-container">
+                <div class="track-info">
+                    <span id="track-name">Track Name</span>
+                    <span id="artist-name">Artist Name</span>
+                    <span id="movie-name">Movie Name</span>
+                </div>
+                <audio id="audio-player"></audio>
+                <div class="controls">
+                    <button id="prev-btn">&#9664;</button>
+                    <button id="play-pause-btn">&#9654;</button>
+                    <button id="next-btn">&#9654;&#9654;</button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
